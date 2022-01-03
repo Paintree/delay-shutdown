@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>icons/counter.png</file>
+        <file>icons/counter_s.png</file>
+    </qresource>
+</RCC>
