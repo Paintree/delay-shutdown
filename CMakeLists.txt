@@ -24,8 +24,9 @@ set(PROJECT_SOURCES
         ${TS_FILES}
 )
 
+set(APP_ICON_RESOURCE_WINDOWS "${CMAKE_CURRENT_SOURCE_DIR}/appicon.rc")
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(delay-shutdown WIN32
+    qt_add_executable(delay-shutdown WIN32 ${APP_ICON_RESOURCE_WINDOWS}
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
     )
